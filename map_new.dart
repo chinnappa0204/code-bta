@@ -17,20 +17,26 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
-          // First Image - Positioned at the top left
+          // First Image - Positioned at the top left, wrapped with GestureDetector for navigation
           Positioned(
             top: 20,
             left: 20,
-            child: Image.network(
-              'https://cdn.builder.io/api/v1/image/assets/66d8cd9063924a40b5ff660085a6d390/02573d01ef6bab9b639da75aaaec224677ae7154aa66b0b15628568d37d45179?apiKey=519c90f9460a412a927c33369783438a&',
-              width: 50,
-              height: 50,
-              fit: BoxFit.contain,
-              loadingBuilder: (context, child, loadingProgress) {
-                if (loadingProgress == null) return child;
-                return const CircularProgressIndicator();
+            child: GestureDetector(
+              onTap: () {
+                // Navigate to the '/menu' route when the image is tapped
+                Navigator.pushNamed(context, '/menu');
               },
-              semanticLabel: 'First logo image',
+              child: Image.network(
+                'https://cdn.builder.io/api/v1/image/assets/66d8cd9063924a40b5ff660085a6d390/02573d01ef6bab9b639da75aaaec224677ae7154aa66b0b15628568d37d45179?apiKey=519c90f9460a412a927c33369783438a&',
+                width: 50,
+                height: 50,
+                fit: BoxFit.contain,
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return const CircularProgressIndicator();
+                },
+                semanticLabel: 'First logo image',
+              ),
             ),
           ),
 
