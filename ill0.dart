@@ -36,7 +36,7 @@ class WelcomeScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 44, top: 5),
                   child: Text(
-                    'NAADA NADE',
+                    'YELLI ULLIYA',
                     style: TextStyle(
                       fontSize: constraints.maxWidth * 0.09,
                       fontFamily: 'Lexend',
@@ -55,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  '"Naade Nade - My Path"',
+                  '"Yelli Ulliya? - Where Are You?"',
                   style: TextStyle(
                     fontSize: constraints.maxWidth * 0.06,
                     fontWeight: FontWeight.w500,
@@ -76,12 +76,12 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                       children: const [
                         TextSpan(
-                          text: 'Naada Nade ',
+                          text: 'Yelli Ulliya ',
                           style: TextStyle(fontWeight: FontWeight.w500),
                         ),
                         TextSpan(
                           text:
-                          'means "My Path" in Kodava. This app is dedicated to the students of CIT, designed to make every journey easier, safer and more predictable.\n\nNaada Nade - your compass to campus.\n\n',
+                          'means "Where Are You" in Kodava Thakk. This app is dedicated to the students of CIT, designed to make every journey easier, safer and more predictable.\n\nYelli Ulliya - your compass to campus.\n\n',
                         ),
                       ],
                     ),
